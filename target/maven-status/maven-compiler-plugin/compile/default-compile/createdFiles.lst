@@ -1,0 +1,10 @@
+com\assignment\filesharing\controller\FileController.class
+com\assignment\filesharing\payload\UploadFileResponse.class
+com\assignment\filesharing\property\FileStorageProperties.class
+com\assignment\filesharing\model\DBFile.class
+com\assignment\filesharing\service\FileStorageService.class
+com\assignment\filesharing\exception\FileStorageException.class
+com\assignment\filesharing\config\SecurityConfig.class
+com\assignment\filesharing\exception\MyFileSharingException.class
+com\assignment\filesharing\repository\FileSharingRepository.class
+com\assignment\filesharing\FileSharingApplication.class
