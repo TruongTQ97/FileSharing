@@ -25,11 +25,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests().antMatchers("/user/**").hasRole("USER").and()
                 .formLogin()//
                 .loginProcessingUrl("/j_spring_security_login")//
-                .loginPage("/login2")//
+                .loginPage("/login")//
                 .defaultSuccessUrl("/user")//
-                .failureUrl("/login2?message=error")//
+                .failureUrl("/login?message=error")//
                 .usernameParameter("username").passwordParameter("password")
                 .and().exceptionHandling().accessDeniedPage("/403")
-                .and().logout().logoutUrl("/j_spring_security_logout").logoutSuccessUrl("/login2?message=logout");
+                .and().logout().logoutUrl("/j_spring_security_logout").logoutSuccessUrl("/login?message=logout");
     }
 }
